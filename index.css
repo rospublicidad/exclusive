@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+#logo {
+  width: 100%;
+  margin: 0%;
+  display: inline-block;
+  position: relative;
+}
+ul {
+    list-style: none;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    }
+ul li {
+    display: inline-block;
+    padding: 7px;
+    background-color: blue;
+    width: 120px;
+    text-align: center;
+    padding: 5px 20px;
+    margin: 0px 20px;
+    border-radius: 0.5em;
+}
+ul li a{
+    padding: 7px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    font-weight: 600;
+}
+#portada {
+  width: 100%;
+}
+.hace {
+  font-family: "Pacifico", cursive;
+  font-size: 5vw;
+  color: blue;
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 0px;
+  transform: rotate(-7deg);
+}
+.con {
+  font-family: "Pacifico", cursive;
+  font-size: 3vw;
+  color: green;
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 80px;
+}
+img#whatsapp {
+  width: 5%;
+  margin-left: 95%;
+  position: fixed;
+  top: 80%;
+}
+#copy {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-align: center;
+    color: white;
+    position: absolute;
+    margin-top: 300px;
+    background-color: hsl(240, 100%, 50%);
+    padding: 10px;
+    width: 100%;
+  }
