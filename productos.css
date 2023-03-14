@@ -79,5 +79,5 @@ grid-template-columns: 1fr 1fr 1fr;
 #desc {
   position: absolute;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: right;
+  text-align: center;
 }
