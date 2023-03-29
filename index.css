@@ -1,37 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+/* ENCABEZADO */
 #logo {
   width: 100%;
   margin: 0%;
   display: inline-block;
   position: relative;
 }
+h1 {
+  color: transparent;
+  width: 0;
+  height: 0;
+}
+
+/* BOTONES DE MENU */
+header {
+  position: absolute;
+}
+
+nav {
+  position: absolute;
+  top: 83px;
+  right: 0px;
+}
+
 ul {
-    list-style: none;
-    position: absolute;
-    top: 60px;
-    right: 10px;
-    }
+  /* border: 3px solid black; */
+  list-style: none;
+  /* position: absolute; */
+  /* top: 60px; */
+  /* right: 10px; */
+}
 ul li {
-    display: inline-block;
-    padding: 7px;
-    background-color: blue;
-    width: 120px;
-    text-align: center;
-    padding: 5px 20px;
-    margin: 0px 20px;
-    border-radius: 0.5em;
+  display: inline-block;
+  padding: 7px;
+  background-color: blue;
+  width: 120px;
+  text-align: center;
+  padding: 5px 20px;
+  margin: 0px 20px;
+  border-radius: 0.5em;
 }
-ul li a{
-    padding: 7px;
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-decoration: none;
-    font-weight: 600;
+ul li a {
+  padding: 7px;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  font-weight: 600;
 }
+
+/* INDEX */
 #portada {
   width: 100%;
 }
-.hace {
+.sloganAzul {
   font-family: "Pacifico", cursive;
   font-size: 5vw;
   color: blue;
@@ -40,7 +67,7 @@ ul li a{
   margin-top: 0px;
   transform: rotate(-7deg);
 }
-.con {
+.sloganVerde {
   font-family: "Pacifico", cursive;
   font-size: 3vw;
   color: green;
@@ -55,12 +82,125 @@ img#whatsapp {
   top: 80%;
 }
 #copy {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    text-align: center;
-    color: white;
-    position: absolute;
-    margin-top: 300px;
-    background-color: hsl(240, 100%, 50%);
-    padding: 10px;
-    width: 100%;
-  }
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  color: white;
+  /* position: absolute;
+  margin-top: 300px; */
+  background-color: hsl(240, 100%, 50%);
+  padding: 10px;
+  width: 100%;
+}
+
+/* PRODUCTOS */
+.contenedor {
+  position: relative;
+  height: 300vh;
+  width: 100%;
+  /* background-color: blueviolet; */
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.prod {
+  background-color: rgb(255, 255, 255);
+  border: 20px;
+  width: 300px;
+  height: 550px;
+  border: 5px solid black;
+  position: relative;
+  border-radius: 0.7em;
+}
+.imgcon {
+  width: 250px;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+.name {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#desc {
+  position: absolute;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+/* pie de pagina */
+
+#copy {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  color: white;
+  /* position: absolute;
+  margin-top: 200px; */
+  background-color: hsl(240, 100%, 50%);
+  padding: 10px;
+  width: 100%;
+}
+/* CONTACTOS */
+
+.maps {
+  width: 100%;
+}
+.formPadre {
+  display: inline-block;
+  width: 40%;
+  position: absolute;
+  right: 0%;
+  background-color: rgb(127, 228, 127);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 8px;
+  align-items: center;
+}
+.titForm {
+  align-items: center;
+  font-family: cursive, fantasy;
+  font-size: 15px;
+}
+.escribir {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  border: 1px solid blue;
+  border-radius: 5px;
+}
+textarea {
+  width: 80%;
+  height: 180px;
+  border-radius: 5px;
+}
+.boton {
+  width: 100px;
+  background-color: green;
+  border: none;
+}
+.cont {
+  display: inline-block;
+  background-color: rgb(91, 197, 91);
+  width: 60%;
+  height: 450px;
+}
+p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2vw;
+  position: relative;
+  left: 15px;
+}
+/* pie de pagina */
+
+#copy {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  color: white;
+  background-color: hsl(240, 100%, 50%);
+  padding: 10px;
+  width: 100%;
+}
