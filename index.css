@@ -16,29 +16,19 @@ h1 {
   width: 0;
   height: 0;
 }
-
 /* BOTONES DE MENU */
-header {
-  position: absolute;
-}
-
 nav {
-  position: absolute;
-  top: 83px;
-  right: 0px;
+  background-color: gray;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: end;
 }
-
 ul {
-  /* border: 3px solid black; */
-  list-style: none;
-  /* position: absolute; */
-  /* top: 60px; */
-  /* right: 10px; */
-}
+   list-style: none;
+ }
 ul li {
   display: inline-block;
   padding: 7px;
-  background-color: blue;
   width: 120px;
   text-align: center;
   padding: 5px 20px;
@@ -53,8 +43,12 @@ ul li a {
   text-decoration: none;
   font-weight: 600;
 }
+ul li a:hover{
+  color:green
+}
 
 /* INDEX */
+
 #portada {
   width: 100%;
 }
@@ -62,19 +56,20 @@ ul li a {
   font-family: "Pacifico", cursive;
   font-size: 5vw;
   color: blue;
-  position: absolute;
   margin-left: 100px;
   margin-top: 0px;
   transform: rotate(-7deg);
-}
+  text-shadow: 3px -4px white;
+  }
+  
 .sloganVerde {
   font-family: "Pacifico", cursive;
   font-size: 3vw;
   color: green;
-  position: absolute;
   margin-left: 50%;
-  margin-top: 80px;
+  margin-bottom: 5px;
 }
+/* pie de pagina */
 img#whatsapp {
   width: 5%;
   margin-left: 95%;
@@ -84,29 +79,27 @@ img#whatsapp {
 #copy {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
+  font-size: 20px;
   color: white;
-  /* position: absolute;
-  margin-top: 300px; */
   background-color: hsl(240, 100%, 50%);
   padding: 10px;
   width: 100%;
+ margin: 10px 0 0 0 ;
 }
 
 /* PRODUCTOS */
 .contenedor {
-  position: relative;
   height: 300vh;
   width: 100%;
-  /* background-color: blueviolet; */
   display: grid;
+  justify-items: center;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
 }
 .prod {
-  background-color: rgb(255, 255, 255);
-  border: 20px;
+   border: 20px;
   width: 300px;
-  height: 550px;
+  height: 510px;
   border: 5px solid black;
   position: relative;
   border-radius: 0.7em;
@@ -127,50 +120,43 @@ img#whatsapp {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
 }
-/* pie de pagina */
 
-#copy {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  text-align: center;
-  color: white;
-  /* position: absolute;
-  margin-top: 200px; */
-  background-color: hsl(240, 100%, 50%);
-  padding: 10px;
-  width: 100%;
-}
 /* CONTACTOS */
 
 .maps {
   width: 100%;
 }
 .formPadre {
-  display: inline-block;
-  width: 40%;
-  position: absolute;
-  right: 0%;
-  background-color: rgb(127, 228, 127);
+  display: flex;
+  justify-content: space-around;
 }
 form {
+  background-color: rgb(127, 228, 127);
+  padding: 10px 0;
   display: flex;
   flex-direction: column;
   gap: 10px;
   border-radius: 8px;
   align-items: center;
+  width: 40%;
 }
 .titForm {
   align-items: center;
   font-family: cursive, fantasy;
-  font-size: 15px;
-}
-.escribir {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  font-size: 20px;
 }
 input {
-  border: 1px solid blue;
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 5px;
+}
+label {
+  display: flex;
+  justify-content:space-between;
+  width: 300px;
+}
+.coment{
+  display: block;
+  text-align: center;
 }
 textarea {
   width: 80%;
@@ -179,28 +165,25 @@ textarea {
 }
 .boton {
   width: 100px;
+  padding: 7px;
   background-color: green;
   border: none;
 }
 .cont {
-  display: inline-block;
+  border-radius: 8px;
   background-color: rgb(91, 197, 91);
-  width: 60%;
-  height: 450px;
+  height: auto;
+  width: 40%;
 }
-p {
-  font-family: "Ubuntu", sans-serif;
-  font-size: 2vw;
-  position: relative;
-  left: 15px;
+.redes {
+  display: flex;
+  justify-content: end;
+  margin-top: 15px;
+  margin-bottom: 80px;
 }
-/* pie de pagina */
-
-#copy {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  text-align: center;
-  color: white;
-  background-color: hsl(240, 100%, 50%);
-  padding: 10px;
-  width: 100%;
+.cont p{
+  font-size: 20px;
+  font-family: "Ubuntu";
+ margin-top: 40px;
+ text-align: center;
 }
