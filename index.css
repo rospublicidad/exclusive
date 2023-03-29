@@ -148,6 +148,7 @@ form {
 input {
   border: 1px solid rgb(0, 0, 0);
   border-radius: 5px;
+  padding: 3px;
 }
 label {
   display: flex;
@@ -166,9 +167,15 @@ textarea {
 .boton {
   width: 100px;
   padding: 7px;
-  background-color: green;
+  background-color: white;
   border: none;
 }
+
+.boton:hover {
+  background-color: green;
+}
+
+
 .cont {
   border-radius: 8px;
   background-color: rgb(91, 197, 91);
